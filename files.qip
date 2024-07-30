@@ -1,0 +1,12 @@
+set_global_assignment -name VERILOG_FILE rtl/orao_tape_buf_ram.v
+
+set_global_assignment -name VERILOG_FILE rtl/orao_ram.v
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/orao_io.sv
+set_global_assignment -name VERILOG_FILE rtl/orao_vram.v
+set_global_assignment -name VERILOG_FILE rtl/orao_video.v
+set_global_assignment -name VERILOG_FILE rtl/orao_rom.v
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/orao_hw.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/keyboard.sv
+set_global_assignment -name VHDL_FILE rtl/cpu65xx_fast.vhd
+set_global_assignment -name VHDL_FILE rtl/cpu65xx_e.vhd
+set_global_assignment -name SYSTEMVERILOG_FILE ORAO.sv
