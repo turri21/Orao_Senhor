@@ -2,6 +2,9 @@
 
 Tested: Working Video 720p, 1080p.
 
+Dev notes: 
+- assign VGA_VS = av_dis ? 1'bZ      : ((vgas_en ? (~vgas_vs ^ VS[12])                         : VGA_DISABLE ? 1'd1 : ~vga_vs) | csync_en); // Keep this
+//assign VGA_VS = av_dis ? 1'bZ      :(((vgas_en ? (~vgas_vs ^ VS[12])                         : VGA_DISABLE ? 1'd1 : ~vga_vs) | csync_en) & subcarrier_out); //The subcarrier_out signal in Sys update is causing audio crackles.
 ___
 # [Orao](https://en.wikipedia.org/wiki/Orao_(computer)) for MiSTer Platform
 
